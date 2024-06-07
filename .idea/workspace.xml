@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f2ae126-78f0-4c0e-b364-5db845d0c145" name="Changes" comment="can change while playing. bug: starts when you click any checkbox" />
+    <list default="true" id="0f2ae126-78f0-4c0e-b364-5db845d0c145" name="Changes" comment="can change while playing. bug: starts when you click any checkbox">
+      <change beforePath="$PROJECT_DIR$/src/BeatBox.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +57,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BeatBox" />
+        <item itemvalue="Application.BeatBox" />
         <item itemvalue="Application.BeatBox" />
         <item itemvalue="Application.BeatBox" />
         <item itemvalue="Application.BeatBox" />
