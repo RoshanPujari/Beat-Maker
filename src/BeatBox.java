@@ -1,9 +1,9 @@
-import javax.sound.midi.Sequence;
-import javax.sound.midi.Sequencer;
-import javax.sound.midi.Track;
+import javax.sound.midi.*;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+
+import static javax.sound.midi.ShortMessage.*;
 
 public class BeatBox {
     private ArrayList<JCheckBox> checkBoxList;
@@ -44,15 +44,15 @@ public class BeatBox {
         buttonBox.add(start);
 
         JButton stop = new JButton("Stop");
-        start.addActionListener(e -> sequencer.stop());
+        stop.addActionListener(e -> sequencer.stop());
         buttonBox.add(stop);
 
         JButton upTempo = new JButton("Tempo up");
-        start.addActionListener(e -> changeTempo());
+        upTempo.addActionListener(e -> changeTempo(1.03f));
         buttonBox.add(upTempo);
 
         JButton downTempo = new JButton("Temp down");
-        start.addActionListener(e -> changeTempo());
+        downTempo.addActionListener(e -> changeTempo(0.97f));
         buttonBox.add(downTempo);
 
         //TODO: create the container where instrument labels will reside
@@ -77,6 +77,7 @@ public class BeatBox {
 
         for(int i = 0; i < 256; i++) {
            JCheckBox checkBox = new JCheckBox();
+           checkBox.addActionListener(e -> createTrackAndStart());
            checkBox.setSelected(false);
            checkPane.add(checkBox);
            checkBoxList.add(checkBox);
@@ -94,6 +95,9 @@ public class BeatBox {
         //add the panel to the frame's content pane
         frame.getContentPane().add(background);
 
+        // midi sound setup
+        setUpMidi();
+
         //TODO: setting all the frames properties
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
@@ -101,12 +105,87 @@ public class BeatBox {
         frame.setVisible(true);
     }
 
+    private void setUpMidi(){
+        try {
+            sequencer = MidiSystem.getSequencer();
+            sequencer.open();
+            sequence = new Sequence(Sequence.PPQ, 4);
+            track = sequence.createTrack();
+            sequencer.setTempoInBPM(120);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private void createTrackAndStart() {
+        int[] trackList;
+
+        //delete the previous track
+        sequence.deleteTrack(track);
+        track = sequence.createTrack();
+
+        for(int i = 0; i < 16; i++){
+            trackList = new int[16];
+            int key = instrument[i];
+
+            for (int j = 0; j < 16; j++){
+                JCheckBox ck = checkBoxList.get(j + 16*i);
+                if(ck.isSelected()){
+                    trackList[j] = key;
+                }else{
+                    trackList[j] = 0;
+                }
+            }
+            makeTrack(trackList);
+            track.add(makeEvent(CONTROL_CHANGE, 1, 127,0,16));
+        }
+        track.add(makeEvent(PROGRAM_CHANGE, 9,1,0,15));
+
+        try {
+            sequencer.setSequence(sequence);
+            sequencer.setLoopCount(Sequencer.LOOP_CONTINUOUSLY);
+            sequencer.setTempoInBPM(120);
+            sequencer.start();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    private void makeTrack(int[] list){
+        for(int i = 0; i < 16; i++){
+            int key = list[i];
+
+            if (key != 0) {
+                track.add(makeEvent(NOTE_ON,9,key,100,i));
+                track.add(makeEvent(NOTE_OFF,9,key,100,i+1));
+            }
+        }
+    }
+
+    private void changeTempo(float tempoMultiplier) {
+        float tempoFactor = sequencer.getTempoFactor();
+        sequencer.setTempoFactor(tempoFactor * tempoMultiplier);
+    }
+
+    public static MidiEvent makeEvent(int command, int channel, int data1, int data2, int tick){
+        MidiEvent me;
+        try {
+            ShortMessage shmsg = new ShortMessage(command,channel,data1,data2);
+            me = new MidiEvent(shmsg, tick);
+
+        } catch (InvalidMidiDataException e) {
+            throw new RuntimeException(e);
+        }
+        return me;
 
     }
 
-    private void changeTempo() {
-
-    }
-
+//    class TrackEnd implements ControllerEventListener{
+//        @Override
+//        public void controlChange(ShortMessage event) {
+//            createTrackAndStart();
+//            System.out.println("End");
+//        }
+//    }
 }
