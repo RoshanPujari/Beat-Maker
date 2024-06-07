@@ -40,7 +40,10 @@ public class BeatBox {
         buttonBox.setBorder(BorderFactory.createEmptyBorder(0,10,0,10));
         //creating all the buttons we need
         JButton start = new JButton("Play");
-        start.addActionListener(e -> createTrackAndStart());
+        start.addActionListener(e -> {
+            createTrack();
+            startSequencer();
+        });
         buttonBox.add(start);
 
         JButton stop = new JButton("Stop");
@@ -77,7 +80,7 @@ public class BeatBox {
 
         for(int i = 0; i < 256; i++) {
            JCheckBox checkBox = new JCheckBox();
-           checkBox.addActionListener(e -> createTrackAndStart());
+           checkBox.addActionListener(e -> createTrackAndResume());
            checkBox.setSelected(false);
            checkPane.add(checkBox);
            checkBoxList.add(checkBox);
@@ -118,7 +121,8 @@ public class BeatBox {
         }
     }
 
-    private void createTrackAndStart() {
+    // creates track
+    private void createTrack() {
         int[] trackList;
 
         //delete the previous track
@@ -141,7 +145,10 @@ public class BeatBox {
             track.add(makeEvent(CONTROL_CHANGE, 1, 127,0,16));
         }
         track.add(makeEvent(PROGRAM_CHANGE, 9,1,0,15));
+    }
 
+    // starts the sequencer
+    private void startSequencer(){
         try {
             sequencer.setSequence(sequence);
             sequencer.setLoopCount(Sequencer.LOOP_CONTINUOUSLY);
@@ -149,6 +156,15 @@ public class BeatBox {
             sequencer.start();
         } catch (Exception e){
             e.printStackTrace();
+        }
+
+    }
+
+    // this one is for the checkbox to update the track and keep playing
+    private void createTrackAndResume() {
+        if (sequencer.isRunning()){
+            createTrack();
+            startSequencer();
         }
     }
 
