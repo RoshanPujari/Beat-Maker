@@ -1,120 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="0f2ae126-78f0-4c0e-b364-5db845d0c145" name="Changes" comment="can change while playing. bug: starts when you click any checkbox">
-      <change beforePath="$PROJECT_DIR$/src/BeatBox.java" beforeDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
+    <component name="AutoImportSettings">
+        <option name="autoReloadType" value="SELECTIVE" />
+    </component>
+    <component name="ChangeListManager">
+        <list default="true" id="0f2ae126-78f0-4c0e-b364-5db845d0c145" name="Changes" comment="BeatBox.Java moved to beatbox package">
+            <change afterPath="$PROJECT_DIR$/Am_I_Blue_AB.mid" afterDir="false" />
+            <change afterPath="$PROJECT_DIR$/src/SoundTest.java" afterDir="false" />
+            <change afterPath="$PROJECT_DIR$/src/file_example_WAV_2MG.wav" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/BeatBox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BeatBox.iml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/src/beatbox/BeatBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beatbox/BeatBox.java" afterDir="false" />
+        </list>
+        <option name="SHOW_DIALOG" value="false" />
+        <option name="HIGHLIGHT_CONFLICTS" value="true" />
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+        <option name="LAST_RESOLUTION" value="IGNORE" />
+    </component>
+    <component name="FileTemplateManagerImpl">
+        <option name="RECENT_TEMPLATES">
+            <list>
+                <option value="Class" />
+            </list>
+        </option>
+    </component>
+    <component name="Git.Settings">
+        <option name="RECENT_BRANCH_BY_REPOSITORY">
+            <map>
+                <entry key="$PROJECT_DIR$" value="master" />
+            </map>
+        </option>
+        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    </component>
+    <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2hXK7M1u2Vifz63IEBaQuh0caaE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
+        }</component>
+    <component name="ProjectId" id="2hXK7M1u2Vifz63IEBaQuh0caaE" />
+    <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+    <component name="ProjectViewState">
+        <option name="hideEmptyMiddlePackages" value="true" />
+        <option name="showLibraryContents" value="true" />
+    </component>
+    <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.BeatBox.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SoundTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.beatbox.BeatBox.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-  }
-}</component>
-  <component name="RunManager">
-    <configuration name="BeatBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BeatBox" />
-      <module name="BeatBox" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BeatBox" />
-        <item itemvalue="Application.BeatBox" />
-        <item itemvalue="Application.BeatBox" />
-        <item itemvalue="Application.BeatBox" />
-        <item itemvalue="Application.BeatBox" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="0f2ae126-78f0-4c0e-b364-5db845d0c145" name="Changes" comment="" />
-      <created>1717734816538</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1717734816538</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Gui build complete">
-      <option name="closed" value="true" />
-      <created>1717739469422</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1717739469422</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Gui build complete">
-      <option name="closed" value="true" />
-      <created>1717739481356</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1717739481356</updated>
-    </task>
-    <task id="LOCAL-00003" summary="can change while playing. bug: starts when you click any checkbox">
-      <option name="closed" value="true" />
-      <created>1717746024513</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1717746024513</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gui build complete" />
-    <MESSAGE value="can change while playing. bug: starts when you click any checkbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="can change while playing. bug: starts when you click any checkbox" />
-  </component>
+    &quot;last_opened_file_path&quot;: &quot;/home/roshan_puajri/Kaya/KMain/LearninShits/Projects/BeatBoxJava/BeatBox/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+        }
+        }</component>
+    <component name="RecentsManager">
+        <key name="CopyFile.RECENT_KEYS">
+            <recent name="$PROJECT_DIR$/src" />
+            <recent name="$PROJECT_DIR$" />
+        </key>
+    </component>
+    <component name="RunManager" selected="Application.beatbox.BeatBox">
+        <configuration name="BeatBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+            <option name="MAIN_CLASS_NAME" value="BeatBox" />
+            <module name="BeatBox" />
+            <method v="2">
+                <option name="Make" enabled="true" />
+            </method>
+        </configuration>
+        <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+            <option name="MAIN_CLASS_NAME" value="test.Main" />
+            <module name="BeatBox" />
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="test.*" />
+                    <option name="ENABLED" value="true" />
+                </pattern>
+            </extension>
+            <method v="2">
+                <option name="Make" enabled="true" />
+            </method>
+        </configuration>
+        <configuration name="SoundTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+            <option name="MAIN_CLASS_NAME" value="SoundTest" />
+            <module name="BeatBox" />
+            <method v="2">
+                <option name="Make" enabled="true" />
+            </method>
+        </configuration>
+        <configuration name="beatbox.BeatBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+            <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+            <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+            <option name="MAIN_CLASS_NAME" value="beatbox.BeatBox" />
+            <module name="BeatBox" />
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="beatbox.*" />
+                    <option name="ENABLED" value="true" />
+                </pattern>
+            </extension>
+            <method v="2">
+                <option name="Make" enabled="true" />
+            </method>
+        </configuration>
+        <list>
+            <item itemvalue="Application.BeatBox" />
+            <item itemvalue="Application.Main" />
+            <item itemvalue="Application.SoundTest" />
+            <item itemvalue="Application.beatbox.BeatBox" />
+        </list>
+        <recent_temporary>
+            <list>
+                <item itemvalue="Application.beatbox.BeatBox" />
+                <item itemvalue="Application.SoundTest" />
+                <item itemvalue="Application.Main" />
+                <item itemvalue="Application.BeatBox" />
+                <item itemvalue="Application.BeatBox" />
+            </list>
+        </recent_temporary>
+    </component>
+    <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+    <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+            <changelist id="0f2ae126-78f0-4c0e-b364-5db845d0c145" name="Changes" comment="" />
+            <created>1717734816538</created>
+            <option name="number" value="Default" />
+            <option name="presentableId" value="Default" />
+            <updated>1717734816538</updated>
+        </task>
+        <task id="LOCAL-00001" summary="Gui build complete">
+            <option name="closed" value="true" />
+            <created>1717739469422</created>
+            <option name="number" value="00001" />
+            <option name="presentableId" value="LOCAL-00001" />
+            <option name="project" value="LOCAL" />
+            <updated>1717739469422</updated>
+        </task>
+        <task id="LOCAL-00002" summary="Gui build complete">
+            <option name="closed" value="true" />
+            <created>1717739481356</created>
+            <option name="number" value="00002" />
+            <option name="presentableId" value="LOCAL-00002" />
+            <option name="project" value="LOCAL" />
+            <updated>1717739481356</updated>
+        </task>
+        <task id="LOCAL-00003" summary="can change while playing. bug: starts when you click any checkbox">
+            <option name="closed" value="true" />
+            <created>1717746024513</created>
+            <option name="number" value="00003" />
+            <option name="presentableId" value="LOCAL-00003" />
+            <option name="project" value="LOCAL" />
+            <updated>1717746024513</updated>
+        </task>
+        <task id="LOCAL-00004" summary="BeatBox.Java moved to beatbox package">
+            <option name="closed" value="true" />
+            <created>1717751122464</created>
+            <option name="number" value="00004" />
+            <option name="presentableId" value="LOCAL-00004" />
+            <option name="project" value="LOCAL" />
+            <updated>1717751122464</updated>
+        </task>
+        <option name="localTasksCounter" value="5" />
+        <servers />
+    </component>
+    <component name="Vcs.Log.Tabs.Properties">
+        <option name="TAB_STATES">
+            <map>
+                <entry key="MAIN">
+                    <value>
+                        <State />
+                    </value>
+                </entry>
+            </map>
+        </option>
+    </component>
+    <component name="VcsManagerConfiguration">
+        <MESSAGE value="Gui build complete" />
+        <MESSAGE value="can change while playing. bug: starts when you click any checkbox" />
+        <MESSAGE value="BeatBox.Java moved to beatbox package" />
+        <option name="LAST_COMMIT_MESSAGE" value="BeatBox.Java moved to beatbox package" />
+    </component>
+    <component name="XDebuggerManager">
+        <breakpoint-manager>
+            <breakpoints>
+                <line-breakpoint enabled="true" type="java-line">
+                    <url>file://$PROJECT_DIR$/src/beatbox/BeatBox.java</url>
+                    <line>32</line>
+                    <option name="timeStamp" value="3" />
+                </line-breakpoint>
+                <line-breakpoint enabled="true" type="java-line">
+                    <url>file://$PROJECT_DIR$/src/beatbox/BeatBox.java</url>
+                    <line>65</line>
+                    <option name="timeStamp" value="4" />
+                </line-breakpoint>
+            </breakpoints>
+        </breakpoint-manager>
+    </component>
 </project>

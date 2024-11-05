@@ -1,0 +1,11 @@
+<component name="libraryTable">
+    <library name="b3dgs.lionengine.audio.midi" type="repository">
+        <properties maven-id="com.b3dgs.lionengine:lionengine-audio-midi:8.4.1" />
+        <CLASSES>
+            <root url="jar://$MAVEN_REPOSITORY$/com/b3dgs/lionengine/lionengine-audio-midi/8.4.1/lionengine-audio-midi-8.4.1.jar!/" />
+            <root url="jar://$MAVEN_REPOSITORY$/com/b3dgs/lionengine/lionengine-core/8.4.1/lionengine-core-8.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+    </library>
+</component>
