@@ -1,16 +1,13 @@
 package beatbox;
 
+import java.awt.*;
+import java.io.*;
+import java.util.ArrayList;
 import javax.sound.midi.*;
+import static javax.sound.midi.ShortMessage.*;
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.awt.*;
-import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-
-import static javax.sound.midi.ShortMessage.*;
 
 public class BeatBox {
 
@@ -267,7 +264,7 @@ public class BeatBox {
 
         if (i == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-            fileName = selectedFile.getName();
+            fileName = selectedFile.getAbsolutePath(); //getName();
             writeFile(fileName);
         }
 
@@ -282,7 +279,7 @@ public class BeatBox {
 
         if (i == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-            fileName = selectedFile.getName();
+            fileName = selectedFile.getAbsolutePath(); //getName();
             loadFile(fileName);
         }
 
