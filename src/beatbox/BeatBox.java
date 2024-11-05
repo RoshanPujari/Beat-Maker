@@ -260,7 +260,7 @@ public class BeatBox {
 
     private void saveDialogBox() {
         String fileName = null;
-        JFileChooser fileChooser = new JFileChooser(new File("/home/roshan_puajri/Kaya/KMain/LearninShits/Projects/BeatBoxJava/BeatBox"));
+        JFileChooser fileChooser = new JFileChooser(new File(""));
         FileFilter fileFilter = new FileNameExtensionFilter("ser", "ser");
         fileChooser.setFileFilter(fileFilter);
         int i = fileChooser.showSaveDialog(frame);
@@ -275,7 +275,7 @@ public class BeatBox {
 
     private void openDialogBox() {
         String fileName = null;
-        JFileChooser fileChooser = new JFileChooser(new File("/home/roshan_puajri/Kaya/KMain/LearninShits/Projects/BeatBoxJava/BeatBox"));
+        JFileChooser fileChooser = new JFileChooser(new File(""));
         FileFilter fileFilter = new FileNameExtensionFilter("ser", "ser");
         fileChooser.setFileFilter(fileFilter);
         int i = fileChooser.showOpenDialog(frame);
